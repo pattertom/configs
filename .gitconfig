@@ -1,0 +1,39 @@
+[alias]
+  a  = add
+  b  = branch
+  br = branch
+  ci = commit
+  co = checkout
+  cp = cherry-pick
+  d  = diff
+  ds = diff --staged
+  l  = log
+  la = log --graph --all
+  lg = log --graph
+  lm = log --pretty=medium
+  ln = log --name-status
+  s  = status
+  st = status
+  su = submodule update --init --recursive
+[color]
+  branch = auto
+  diff   = auto
+  status = auto
+[diff]
+  indentHeuristic = true
+[format]
+  pretty = format:%Cblue%cd %Cgreen%h %Creset%s %Cblue(%aN)%Cgreen%d
+[interactive]
+  diffFilter = diff-highlight | less
+[merge]
+  tool = vimdiff
+[log]
+  date = format:%F %I:%M %p
+[pager]
+  diff = diff-highlight | less
+  log  = diff-highlight | less
+  show = diff-highlight | less
+[pull]
+  rebase = true
+[stash]
+  showPatch = true
